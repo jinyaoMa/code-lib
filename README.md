@@ -3,7 +3,7 @@
 ## Update 2020-04-03
 1. Add categories "JavaScript", "Python", "Android", "HTML", "CSS", "HEXO", "Java", "PHP", "C#", "Swift"
 
-<codelib-more></codelib-more>
+---
 
 ## Update 2020-04-02
 1. repo/code-lib created
