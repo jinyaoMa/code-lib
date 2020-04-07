@@ -1,7 +1,7 @@
 var http = require('http')
 var fs = require('fs')
 
-var TARGET_TEST_HTML_FILE = './test_JavaScript_factory.html'; // 修改测试目标
+var TARGET_TEST_HTML_FILE = './test_JavaScript_ajax.js.html'; // 修改测试目标
 
 http.createServer().on('request', function (req, res) {
   if (req.url === '/') {

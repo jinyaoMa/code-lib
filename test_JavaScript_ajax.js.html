@@ -1,0 +1,37 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+  <script src="JavaScript/ajax.js"></script>
+
+  <script>
+
+    ajax({
+      url: 'https://ma-jinyao.cn/sitemap.xml',
+      method: 'get',
+      timeout: 15000,
+      headers: {
+        accept: 'application/xml'
+      },
+      datatype: 'xml',
+      data: {
+        t: Date.now()
+      },
+      success(result) {
+        console.log(result)
+        document.write('<pre>' + result + '</pre>')
+      },
+      error(e) {
+        console.error(e)
+      }
+    });
+
+  </script>
+
+</body>
+
+</html>

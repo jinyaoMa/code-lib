@@ -1,7 +1,7 @@
-# [VERSION: 20200407.1634](//github.com/jinyaoMa/code-lib)
+# [VERSION: 20200407.1855](//github.com/jinyaoMa/code-lib)
 
 ## Update 2020-04-07
-1. Add JavaScript/factory.js
+1. Add JavaScript/factory.js, JavaScript/ajax.js
 
 ## Update 2020-04-03
 1. Add categories "JavaScript", "Python", "Android", "HTML", "CSS", "Hexo", "Java", "PHP", "C#", "Swift"

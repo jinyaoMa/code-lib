@@ -1,6 +1,8 @@
 /**
  * Factory
  * 
+ * Example: https://github.com/jinyaoMa/code-lib/blob/master/test_JavaScript_factory.js.html
+ * 
  * @author jinyaoMa 2020-04-07
  * 
  */
