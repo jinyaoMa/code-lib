@@ -1,4 +1,7 @@
-# [VERSION: 20200407.2120](//github.com/jinyaoMa/code-lib)
+# [VERSION: 20200409.2202](//github.com/jinyaoMa/code-lib)
+
+## Update 2020-04-09
+1. Add JavaScript/palette.js
 
 ## Update 2020-04-07
 1. Add JavaScript/factory.js, JavaScript/ajax.js, JavaScript/jsonp.js, JavaScript/storage.js, JavaScript/utils.js
