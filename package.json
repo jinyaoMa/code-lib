@@ -1,0 +1,23 @@
+{
+  "name": "code-lib",
+  "version": "1.0.0",
+  "description": "Code/Function/Method Library",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinyaoMa/code-lib.git"
+  },
+  "author": "jinyaoMa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jinyaoMa/code-lib/issues"
+  },
+  "homepage": "https://github.com/jinyaoMa/code-lib#readme",
+  "dependencies": {
+    "stylus": "^0.54.7"
+  }
+}
