@@ -1,0 +1,72 @@
+$header_height = calc(0.6vmin + 3em)
+$app_min_width = 1024px
+$frame_max_width = 1366px
+$drawer_width = 300px
+$aside_width = 300px
+
+zIndex(n)
+  999999999 - n
+
+clearAfter()
+  &:after
+    content ''
+    display block
+    clear both
+    
+
+:root
+  --color-background #000000
+  --color-text #ffffff
+
+/* TEMP - START */
+.main, .drawer, .aside
+  height 100vh
+.footer
+  height 12em
+.header
+  background #111111
+.main
+  background #222222
+.drawer
+  background #333333
+.aside
+  background #444444
+.footer
+  background #555555
+/* TEMP - END */
+
+body
+  overflow-x hidden
+  overflow-y scroll
+  width 100%
+
+.app
+  width 100%
+  min-width $app_min_width
+
+.header
+  z-index zIndex(1)
+  width 100%
+  position fixed
+  top 0
+  left 0
+  height $header_height
+
+.frame
+  margin $header_height auto 0
+  max-width $frame_max_width
+  clearAfter()
+
+.drawer, .main, .aside
+  float left
+
+.drawer
+  z-index zIndex(2)
+  width $drawer_width
+
+.aside
+  z-index zIndex(2)
+  width $aside_width
+
+.main
+  width s('calc(100% - %s)', $drawer_width + $aside_width)

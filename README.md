@@ -1,4 +1,10 @@
-# [VERSION: 20200409.2202](//github.com/jinyaoMa/code-lib)
+# [VERSION: 20200413.1429](//github.com/jinyaoMa/code-lib)
+
+## Update 2020-04-13
+1. Add category "Web"
+2. Add Web/goTopBottom.js
+3. Add HTML/template.blog.html
+4. Add CSS/template.blog.styl
 
 ## Update 2020-04-09
 1. Add JavaScript/palette.js
