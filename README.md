@@ -1,10 +1,11 @@
-# [VERSION: 20200413.1429](//github.com/jinyaoMa/code-lib)
+# [VERSION: 20200413.1518](//github.com/jinyaoMa/code-lib)
 
 ## Update 2020-04-13
 1. Add category "Web"
 2. Add Web/goTopBottom.js
 3. Add HTML/template.blog.html
 4. Add CSS/template.blog.styl
+5. Move JavaScript/ajax.js, JavaScript/jsonp.js, JavaScript/storage.js, JavaScript/utils.js, JavaScript/palette.js to Web
 
 ## Update 2020-04-09
 1. Add JavaScript/palette.js
