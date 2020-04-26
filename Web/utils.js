@@ -78,7 +78,8 @@ const utils = {
     return result;
   },
   hasCookie(name) {
-    return this.getCookie(name) ? true : false;
+    let value = this.getCookie(name);
+    return value === null || value === '' ? false : true;
   },
   deleteCookie(name) {
     let oldValue = this.getCookie(name);
