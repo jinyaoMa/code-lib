@@ -55,6 +55,35 @@ const utils = {
       }
     }
     return result;
+  },
+  setCookie(name, value, expire = 600000, path = '/') {
+    if (typeof name === 'string' && /[\=\;]/.test(name)) throw new Error('invalid argument "name"');
+    if (typeof value === 'string' && /[\=\;]/.test(value)) throw new Error('invalid argument "value"');
+    if (typeof path === 'string' && /[\=\;]/.test(path)) throw new Error('invalid argument "path"');
+    if (isNaN(expire)) throw new Error('invalid argument "expire"');
+    let date = new Date(Date.now() + expire);
+    document.cookie = `${name}=${value}; expires=${date.toGMTString()}; path=${path}`;
+  },
+  getCookie(name) {
+    let result = null;
+    let target = `${name}=`;
+    let cookies = document.cookie.split(';');
+    this.forEach(cookies, pair => {
+      pair = pair.trim();
+      if (pair.indexOf(target) === 0) {
+        result = pair.replace(target, '');
+        return true;
+      }
+    });
+    return result;
+  },
+  hasCookie(name) {
+    return this.getCookie(name) ? true : false;
+  },
+  deleteCookie(name) {
+    let oldValue = this.getCookie(name);
+    this.setCookie(name, '', -1);
+    return oldValue;
   }
 };
 

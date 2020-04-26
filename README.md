@@ -1,4 +1,7 @@
-# [VERSION: 20200413.1518](//github.com/jinyaoMa/code-lib)
+# [VERSION: 20200426.1744](//github.com/jinyaoMa/code-lib)
+
+## Update 2020-04-26
+1. Add cookie-related functions to Web/utils.js
 
 ## Update 2020-04-13
 1. Add category "Web"
