@@ -65,7 +65,7 @@ const utils = {
     document.cookie = `${name}=${value}; expires=${date.toGMTString()}; path=${path}`;
   },
   getCookie(name) {
-    let result = null;
+    let result = '';
     let target = `${name}=`;
     let cookies = document.cookie.split(';');
     this.forEach(cookies, pair => {
@@ -76,10 +76,6 @@ const utils = {
       }
     });
     return result;
-  },
-  hasCookie(name) {
-    let value = this.getCookie(name);
-    return value === null || value === '' ? false : true;
   },
   deleteCookie(name) {
     let oldValue = this.getCookie(name);
