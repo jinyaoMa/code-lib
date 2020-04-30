@@ -1,4 +1,7 @@
-# [VERSION: 20200426.1744](//github.com/jinyaoMa/code-lib)
+# [VERSION: 20200429.2344](//github.com/jinyaoMa/code-lib)
+
+## Update 2020-04-29
+1. Add Java/Count.java, Java/Triangle.java
 
 ## Update 2020-04-26
 1. Add cookie-related functions to Web/utils.js
