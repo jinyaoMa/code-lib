@@ -1,7 +1,7 @@
 # [VERSION: 20200430.1830](//github.com/jinyaoMa/code-lib)
 
 ## Update 2020-04-30
-1. Add Java/Eath.java, Java/Temperature.java
+1. Add Java/Earth.java, Java/Temperature.java
 
 ## Update 2020-04-29
 1. Add Java/Count.java, Java/Triangle.java
