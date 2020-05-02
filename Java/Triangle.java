@@ -1,6 +1,7 @@
 package Java;
 
 public class Triangle {
+
   private int sideA, sideB, sideC;
 
   /**

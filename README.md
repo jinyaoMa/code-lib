@@ -1,4 +1,7 @@
-# [VERSION: 20200430.1830](//github.com/jinyaoMa/code-lib)
+# [VERSION: 20200502.0450](//github.com/jinyaoMa/code-lib)
+
+## Update 2020-05-02
+1. Add Java/Factory.java
 
 ## Update 2020-04-30
 1. Add Java/Earth.java, Java/Temperature.java
