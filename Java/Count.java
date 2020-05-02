@@ -1,8 +1,9 @@
 package Java;
 
 /**
- * Count
+ * @author jinyaoMa
  */
+
 public class Count {
 
   public static int vowels(String s) {

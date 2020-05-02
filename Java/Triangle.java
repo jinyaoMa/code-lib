@@ -1,5 +1,9 @@
 package Java;
 
+/**
+ * @author jinyaoMa
+ */
+
 public class Triangle {
 
   private int sideA, sideB, sideC;

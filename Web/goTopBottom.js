@@ -1,3 +1,7 @@
+/**
+ * @author jinyaoMa
+ */
+
 const going = {
   decay: 0.9,
   growth: 0.1,

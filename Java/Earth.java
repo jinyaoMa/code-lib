@@ -1,5 +1,9 @@
 package Java;
 
+/**
+ * @author jinyaoMa
+ */
+
 public class Earth {
 
   public class Location {
