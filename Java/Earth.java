@@ -1,6 +1,13 @@
 package Java;
 
 /**
+ * 
+ * Examples:
+ * A => new Location(49.0002, 51.1000)
+ *   => new Location(new Location.Value(49, 0, 0.72), new Location.Value(51, 6, 0))
+ * B => new Location(50.0002, 50.1000)
+ * Earth.getDistance(A, B)
+ * 
  * @author jinyaoMa
  */
 
@@ -11,9 +18,9 @@ public class Earth {
     public class Value {
       private long degree;
       private long minute;
-      private long second;
+      private double second;
 
-      public Value(long degree, long minute, long second) {
+      public Value(long degree, long minute, double second) {
         setTo(degree, minute, second);
       }
 
@@ -25,7 +32,7 @@ public class Earth {
         setTo(degree);
       }
 
-      public void setTo(long degree, long minute, long second) {
+      public void setTo(long degree, long minute, double second) {
         this.degree = degree;
         this.minute = minute;
         this.second = second;
@@ -34,14 +41,14 @@ public class Earth {
       public void setTo(long degree, double minute) {
         this.degree = degree;
         this.minute = (long) minute;
-        this.second = (long) ((minute - this.minute) * 60);
+        this.second = (minute - this.minute) * 60;
       }
 
       public void setTo(double degree) {
         this.degree = (long) degree;
         double tempMinute = (degree - this.degree) * 60;
         this.minute = (long) tempMinute;
-        this.second = (long) ((tempMinute - this.minute) * 60);
+        this.second = (tempMinute - this.minute) * 60;
       }
 
       public long getDegree() {
@@ -52,7 +59,7 @@ public class Earth {
         return minute;
       }
 
-      public long getSecond() {
+      public double getSecond() {
         return second;
       }
 

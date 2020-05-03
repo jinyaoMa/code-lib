@@ -1,12 +1,15 @@
 package Java;
 
-/**
- * @author jinyaoMa
- */
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
+
+/**
+ * Functioning like code in JavaScript/factory.js
+ * Factory delivers Tasks to Workers, and tasks' results will return to main thread for other operations.
+ * 
+ * @author jinyaoMa
+ */
 
 public class Factory<T> {
 
@@ -24,9 +27,9 @@ public class Factory<T> {
 
       void run(Task<T> task, Next<T> next);
 
-      void onComplete(T data);
+      void onResolve(T data);
 
-      void onError(Exception e);
+      void onReject(Exception e);
 
     }
 
@@ -45,12 +48,12 @@ public class Factory<T> {
 
       @Override
       public void resolve(T data) {
-        process.onComplete(data);
+        process.onResolve(data);
       }
 
       @Override
       public void reject(Exception e) {
-        process.onError(e);
+        process.onReject(e);
       }
     };
 
@@ -71,7 +74,7 @@ public class Factory<T> {
       try {
         process.run(this, next);
       } catch (Exception e) {
-        process.onError(e);
+        process.onReject(e);
       }
     }
   }

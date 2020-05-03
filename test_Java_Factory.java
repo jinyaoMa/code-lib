@@ -16,12 +16,13 @@ public class test_Java_Factory {
         }
 
         @Override
-        public void onComplete(String data) {
+        public void onResolve(String data) {
           System.out.println(data);
+
         }
 
         @Override
-        public void onError(Exception e) {
+        public void onReject(Exception e) {
           System.out.println(e.getMessage());
         }
       }));

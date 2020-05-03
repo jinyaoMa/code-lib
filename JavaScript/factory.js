@@ -29,24 +29,23 @@ class Factory {
   }
   next() {
     if (this.queue.length) {
-      this.queue.shift()
-        .on(Factory.Task.START, o => {
-          this.isWorking = true;
-        })
-        .on(Factory.Task.COMPLETE, result => {
-          if (result && !this.forceStop) {
-            this.next();
-          } else {
-            this.isWorking = false;
-            this.forceStop = false;
-          }
-        })
-        .on(Factory.Task.ERROR, error => {
+      let task = this.queue.shift();
+      task.on(Factory.Task.START, o => {
+        this.isWorking = true;
+      }).on(Factory.Task.COMPLETE, result => {
+        if (result !== undefined && result !== null && !this.forceStop) {
+          typeof task.listeners.oncomplete === 'function' && task.listeners.oncomplete(result);
+          this.next();
+        } else {
           this.isWorking = false;
           this.forceStop = false;
-          console.error(error);
-        })
-        .do();
+        }
+      }).on(Factory.Task.ERROR, error => {
+        this.isWorking = false;
+        this.forceStop = false;
+        typeof task.listeners.onerror === 'function' && task.listeners.onerror(error);
+        console.error(error);
+      }).do();
     }
   }
   stop() {
@@ -54,11 +53,14 @@ class Factory {
   }
 }
 Factory.Task = class {
-  constructor(callback) {
+  constructor(callback, listeners = null) {
     if (typeof callback === 'function') {
       this.callback = callback;
     } else {
       throw new Error('Factory.Tack.constructor: invalid arguments');
+    }
+    if (listeners != null) {
+      this.listeners = listeners;
     }
   }
   on(action, callback) {

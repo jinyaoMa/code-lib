@@ -1,4 +1,8 @@
-# [VERSION: 20200502.0450](//github.com/jinyaoMa/code-lib)
+# [VERSION: 20200503.0108](//github.com/jinyaoMa/code-lib)
+
+## Update 2020-05-03
+1. Update JavaScript/factory.js
+2. Add Java/Ajax.java
 
 ## Update 2020-05-02
 1. Add Java/Factory.java
