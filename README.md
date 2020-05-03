@@ -2,6 +2,7 @@
 
 ## Update 2020-05-03
 1. Update JavaScript/factory.js
+1. Update Java/factory.java
 2. Add Java/Ajax.java
 
 ## Update 2020-05-02
