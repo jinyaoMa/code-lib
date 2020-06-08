@@ -1,4 +1,7 @@
-# [VERSION: 20200503.0108](//github.com/jinyaoMa/code-lib)
+# [VERSION: 20200608.1312](//github.com/jinyaoMa/code-lib)
+
+## Update 2020-06-08
+1. Add CSS/headerNumbering.styl
 
 ## Update 2020-05-03
 1. Update JavaScript/factory.js
