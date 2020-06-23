@@ -1,4 +1,7 @@
-# [VERSION: 20200608.1312](//github.com/jinyaoMa/code-lib)
+# [VERSION: 20200623.1144](//github.com/jinyaoMa/code-lib)
+
+## Update 2020-06-23
+1. Add HTML/netease.hotlist.tpl.html
 
 ## Update 2020-06-08
 1. Add CSS/headerNumbering.styl
